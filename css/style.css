@@ -136,4 +136,40 @@ footer iframe {
   float: right;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    padding: 1em;
+  }
+  header nav {
+    padding: 0.5em;
+  }
+  header h1 {
+    width: 95%;
+  }
+
+  section {
+    white-space: normal;
+    padding: 5em 1em;
+  }
+  section div {
+    width: 49%;
+    margin-bottom: 4em;
+  }
+
+  footer .logo {
+    text-align: center;
+    width: 100%;
+  }
+  footer .logo span {
+    text-align: center;
+  }
+  footer .text {
+    width: 100%;
+    text-align: center;
+  }
+  footer iframe {
+    width: 85%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

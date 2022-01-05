@@ -131,3 +131,39 @@ footer {
     float: right;
   }
 }
+
+@include tablet {
+  header {
+    padding: 1em;
+    nav {
+      padding: 0.5em;
+    }
+    h1 {
+      width: 95%;
+    }
+  }
+  section {
+    white-space: normal;
+    padding: 5em 1em;
+    div {
+      width: 49%;
+      margin-bottom: 4em;
+    }
+  }
+  footer {
+    .logo {
+      text-align: center;
+      width: 100%;
+      span {
+        text-align: center;
+      }
+    }
+    .text {
+      width: 100%;
+      text-align: center;
+    }
+    iframe {
+      width: 85%;
+    }
+  }
+}
