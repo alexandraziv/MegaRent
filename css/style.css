@@ -6,4 +6,134 @@
   color: #797979;
 }
 
+header {
+  background: url("../slike/background.jpg");
+  height: 40em;
+  background-size: cover;
+  padding: 2em 18em;
+}
+header nav {
+  padding: 1em;
+  background: white;
+}
+header nav div {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: bold;
+}
+header nav div span {
+  color: #ff3720;
+}
+header nav ul {
+  display: inline-block;
+  width: 80%;
+  text-align: right;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header h1 {
+  margin: 20% auto 0;
+  color: white;
+  font-weight: normal;
+  border-bottom: 1px solid #ff3720;
+  width: 50%;
+  text-align: center;
+}
+header h3 {
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  width: 50%;
+}
+
+section {
+  background-color: #f0f0f0;
+  white-space: nowrap;
+  padding: 5em;
+}
+section div {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+section div img {
+  width: 70%;
+}
+section div button {
+  background: #ff3720;
+  color: white;
+  border: none;
+  padding: 0.5em 2em;
+  margin-top: 0.5em;
+}
+section h1 {
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+.table {
+  background: white;
+}
+.table table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+}
+.table table th,
+.table table td {
+  padding: 1em;
+  text-align: center;
+}
+.table table thead {
+  background: #ff3720;
+}
+.table table thead tr th {
+  color: white;
+}
+.table table thead tr th:first-child {
+  background-color: #ff3720;
+}
+.table table tbody tr {
+  border-bottom: 1px solid black;
+}
+.table table tbody tr td:first-child {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+footer {
+  padding: 1em 10em;
+  background: black;
+}
+footer:before, footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
+}
+footer .logo {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ff3720;
+}
+footer .logo span {
+  color: #ff3720;
+}
+footer .text {
+  float: left;
+}
+footer .text p {
+  color: white;
+  font-style: italic;
+}
+footer iframe {
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */

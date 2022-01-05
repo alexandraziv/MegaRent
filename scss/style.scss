@@ -1,4 +1,133 @@
-@import 'vars';
-@import 'mixins';
+@import "vars";
+@import "mixins";
 
 @include main;
+
+header {
+  background: url("../slike/background.jpg");
+  height: 40em;
+  background-size: cover;
+  padding: 2em 18em;
+  nav {
+    padding: 1em;
+    background: white;
+    div {
+      display: inline-block;
+      font-size: 2em;
+      font-weight: bold;
+      span {
+        color: $main_red;
+      }
+    }
+    ul {
+      display: inline-block;
+      width: 80%;
+      text-align: right;
+      li {
+        display: inline-block;
+        margin-left: 1em;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  h1 {
+    margin: 20% auto 0;
+    color: white;
+    font-weight: normal;
+    border-bottom: 1px solid $main_red;
+    width: 50%;
+    text-align: center;
+  }
+  h3 {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    width: 50%;
+  }
+}
+
+section {
+  background-color: $grey_background;
+  white-space: nowrap;
+  padding: 5em;
+  div {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    img {
+      width: 70%;
+    }
+    button {
+      background: $main_red;
+      color: white;
+      border: none;
+      padding: 0.5em 2em;
+      margin-top: 0.5em;
+    }
+  }
+  h1 {
+    margin-bottom: 4em;
+    text-align: center;
+  }
+}
+
+.table {
+  background: white;
+  table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+    th,
+    td {
+      padding: 1em;
+      text-align: center;
+    }
+    thead {
+      background: $main_red;
+      tr {
+        th {
+          color: white;
+        }
+        th:first-child {
+          background-color: $main_red;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid black;
+        td:first-child {
+          background: $grey_background;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+footer {
+  padding: 1em 10em;
+  background: black;
+  @include clearfix;
+
+  .logo {
+    font-size: 1.5em;
+    border-bottom: 1px solid $main_red;
+    span {
+      color: $main_red;
+    }
+  }
+  .text {
+    float: left;
+    p {
+      color: white;
+      font-style: italic;
+    }
+  }
+
+  iframe {
+    float: right;
+  }
+}
